@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Factorial Test Suite">
+
+    <test name="All Tests">
+        <groups>
+            <run>
+                <include name="setup"/>
+                <include name="tearDown"/>
+                <include name="smoke"/>
+                <include name="validation"/>
+                <include name="boundary"/>
+                <include name="navigation"/>
+                <include name="api"/>
+                <include name="additional"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="io.github.PercivalGebashe.tests.ValidationTests"/>
+            <class name="io.github.PercivalGebashe.tests.BoundaryTests"/>
+            <class name="io.github.PercivalGebashe.tests.UiBehaviourTests"/>
+            <class name="io.github.PercivalGebashe.tests.NavigationTests"/>
+            <class name="io.github.PercivalGebashe.tests.ApiTests"/>
+            <class name="io.github.PercivalGebashe.tests.AdditionalTests"/>
+        </classes>
+
+        <listeners>
+            <listener class-name="io.github.PercivalGebashe.utils.TestListener"/>
+        </listeners>
+    </test>
+
+</suite>
