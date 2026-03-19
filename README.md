@@ -135,12 +135,6 @@ mvn test
 
 ---
 
-## Improvements (Future Work)
-* Introduce test reporting (e.g., Allure)
-* Add configuration management (environment-based execution)
-* Implement retry logic for flaky tests 
-* Expand API validation with deeper request/response assertions 
-
 ## Author
 Percival Gebashe
 
