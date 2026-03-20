@@ -2,29 +2,35 @@ package io.github.PercivalGebashe.tests;
 
 import io.github.PercivalGebashe.base.BaseTest;
 import io.github.PercivalGebashe.pages.FactorialPage;
+import io.github.PercivalGebashe.testData.UiData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 public class UiBehaviourTests extends BaseTest {
 
-    @Test(groups = {"ui"})
-    public void testErrorMessageVisibility() { // TC-13
+    @Test(groups = {"ui"}, dataProvider = "uiMessageData", dataProviderClass = UiData.class)
+    public void testErrorMessageVisibility(String input, String expected) {
         FactorialPage fp = new FactorialPage(page);
 
-        fp.submitNumber("5.5");
+        fp.submitNumber(input);
 
-        Assert.assertTrue(fp.getErrorText().toLowerCase().contains("integer"));
+        assertThat(fp.getResultTextLocator()).containsText(expected);
+
+        Assert.assertEquals(fp.getResultText(), expected);
         Assert.assertTrue(fp.isInputHighlighted());
     }
 
-    @Test(groups = {"ui"})
-    public void testCorrectionFlow() { // TC-14
+    @Test(groups = {"ui"}, dataProvider = "uiCorrectionFlowData", dataProviderClass = UiData.class)
+    public void testCorrectionFlow(String invalidInput, String validInput, String expected) {
         FactorialPage fp = new FactorialPage(page);
 
-        fp.submitNumber("5.5");
+        fp.submitNumber(invalidInput);
 
-        fp.submitNumber("5");
+        fp.submitNumber(validInput);
 
-        Assert.assertTrue(fp.getResultText().contains("120"));
+        assertThat(fp.getResultTextLocator()).containsText(expected);
+        Assert.assertEquals(fp.getResultText(),expected);
     }
 }

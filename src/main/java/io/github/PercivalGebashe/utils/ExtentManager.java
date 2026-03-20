@@ -10,8 +10,14 @@ public class ExtentManager {
         if (extent == null) {
             extent = new ExtentReports();
             ExtentSparkReporter reporter = new ExtentSparkReporter("reports/index.html");
+            reporter.config().setDocumentTitle("Automation Report");
+            reporter.config().setReportName("Factorial Test Results");
             extent.attachReporter(reporter);
+
+
         }
         return extent;
     }
+
+
 }

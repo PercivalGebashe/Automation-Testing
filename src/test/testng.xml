@@ -7,11 +7,13 @@
                 <include name="setup"/>
                 <include name="tearDown"/>
                 <include name="smoke"/>
+                <include name="functional"/>
                 <include name="validation"/>
                 <include name="boundary"/>
                 <include name="navigation"/>
                 <include name="api"/>
                 <include name="additional"/>
+                <include name="ui"/>
             </run>
         </groups>
 
@@ -19,9 +21,8 @@
             <class name="io.github.PercivalGebashe.tests.ValidationTests"/>
             <class name="io.github.PercivalGebashe.tests.BoundaryTests"/>
             <class name="io.github.PercivalGebashe.tests.UiBehaviourTests"/>
-            <class name="io.github.PercivalGebashe.tests.NavigationTests"/>
+            <class name="io.github.PercivalGebashe.tests.NavigationDataTests"/>
             <class name="io.github.PercivalGebashe.tests.ApiTests"/>
-            <class name="io.github.PercivalGebashe.tests.AdditionalTests"/>
         </classes>
 
         <listeners>

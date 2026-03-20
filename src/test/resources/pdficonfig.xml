@@ -1,0 +1,5 @@
+<configuration>
+    <theme>standard</theme>
+    <documentTitle>Playwright Test Report</documentTitle>
+    <reportName>Automation Results</reportName>
+</configuration>

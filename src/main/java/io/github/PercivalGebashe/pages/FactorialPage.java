@@ -10,7 +10,6 @@ public class FactorialPage {
     private final Locator inputField;
     private final Locator submitButton;
     private final Locator resultText;
-    private final Locator errorText;
 
     private final Locator aboutLink;
     private final Locator termsLink;
@@ -22,8 +21,6 @@ public class FactorialPage {
         this.inputField = page.locator("input[type='text']");
         this.submitButton = page.locator("button[type='submit']");
         this.resultText = page.locator("#resultDiv");
-        this.errorText = page.locator(".error");
-
         this.aboutLink = page.locator("text=About");
         this.termsLink = page.locator("text=Terms");
         this.privacyLink = page.locator("text=Privacy");
@@ -52,28 +49,31 @@ public class FactorialPage {
         return resultText.textContent();
     }
 
+
     public boolean isResultVisible() {
         return resultText.isVisible();
     }
 
-    public boolean isErrorVisible() {
-        return errorText.isVisible();
-    }
-
-    public String getErrorText() {
-        if (isErrorVisible()) {
-            return errorText.textContent();
-        }
-        return "";
-    }
-
     public boolean isInputHighlighted() {
-        String classAttr = inputField.getAttribute("class");
-        return classAttr != null && classAttr.contains("error");
+        String classAttr = inputField.getAttribute("style");
+        return classAttr != null && classAttr.contains("solid red");
     }
 
     public void clickAbout() {
         aboutLink.click();
+    }
+
+    public void navigateTo(String page){
+        switch (page.toLowerCase()){
+            case "about":
+                clickAbout();
+                break;
+            case "Terms and Conditions":
+                clickTerms();
+                break;
+            case "Privacy":
+                clickPrivacy();
+        }
     }
 
     public void clickTerms() {
@@ -108,5 +108,9 @@ public class FactorialPage {
                 System.out.println("Request Post Data: " + request.postData());
             }
         });
+    }
+
+    public Locator getResultTextLocator(){
+        return resultText;
     }
 }
