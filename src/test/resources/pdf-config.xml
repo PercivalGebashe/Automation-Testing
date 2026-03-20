@@ -1,0 +1,56 @@
+<configuration>
+
+    <!-- Theme -->
+    <theme>standard</theme>
+
+    <!-- Titles -->
+    <documentTitle>Factorial Automation Report</documentTitle>
+    <reportName>Test Execution Results</reportName>
+    <title>Factorial Application - Automation and API Test Report</title>
+
+    <!-- Primary Colors (Clean Blue Theme) -->
+    <titleColor>1E88E5</titleColor>
+
+    <!-- Timing Colors (Neutral) -->
+    <startTimesColor>757575</startTimesColor>
+    <finishTimesColor>757575</finishTimesColor>
+    <durationColor>546E7A</durationColor>
+
+    <!-- Status Counts -->
+    <passCountColor>2E7D32</passCountColor>
+    <failCountColor>C62828</failCountColor>
+
+    <!-- Status Colors -->
+    <passColor>2E7D32</passColor>      <!-- Green -->
+    <failColor>C62828</failColor>      <!-- Red -->
+    <skipColor>F9A825</skipColor>      <!-- Amber -->
+    <warnColor>F57C00</warnColor>
+    <infoColor>1565C0</infoColor>
+
+    <!-- Category / Grouping -->
+    <categoryTitleColor>37474F</categoryTitleColor>
+    <categoryNameColor>546E7A</categoryNameColor>
+
+    <!-- Author / Device -->
+    <authorTitleColor>37474F</authorTitleColor>
+    <authorNameColor>1E88E5</authorNameColor>
+
+    <deviceTitleColor>37474F</deviceTitleColor>
+    <deviceNameColor>1E88E5</deviceNameColor>
+
+    <!-- System Info -->
+    <systemTitleColor>37474F</systemTitleColor>
+    <systemNameColor>263238</systemNameColor>
+    <systemValueColor>1E88E5</systemValueColor>
+
+    <!-- Exceptions -->
+    <exceptionTitleColor>C62828</exceptionTitleColor>
+
+    <!-- Test Details -->
+    <attributeTestStatusColor>37474F</attributeTestStatusColor>
+    <testNameColor>212121</testNameColor>
+    <testTimesColor>546E7A</testTimesColor>
+    <testTimeStampColor>757575</testTimeStampColor>
+    <testExceptionColor>C62828</testExceptionColor>
+
+</configuration>

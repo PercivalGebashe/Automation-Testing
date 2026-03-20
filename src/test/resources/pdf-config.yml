@@ -1,0 +1,33 @@
+title: "Automation Test ffReport"
+reportName: "Factorial Application Test Results"
+
+theme:
+  primaryColor: "#1E88E5"   # modern blue
+  secondaryColor: "#1565C0"
+  backgroundColor: "#FFFFFF"
+  textColor: "#212121"
+
+summary:
+  show: true
+
+details:
+  show: true
+
+charts:
+  show: true
+
+timeline:
+  show: false
+
+systemInfo:
+  Environment: "QA"
+  Tester: "Percival Gebashe"
+  Framework: "Playwright + TestNG"
+  ReportType: "Automation + API + UI"
+
+testDetails:
+  showSteps: true
+  showScreenshots: true
+
+branding:
+  showLogo: false
