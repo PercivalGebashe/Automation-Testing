@@ -2,6 +2,7 @@ package io.github.PercivalGebashe.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.TimeoutError;
 
 public class BasePage {
 
@@ -40,9 +41,15 @@ public class BasePage {
         submit();
     }
 
-    public String getResultText() {
-        resultText.waitFor();
-        return resultText.textContent();
+    public String getResultText() throws TimeoutError{
+        try {
+            resultText.waitFor();
+            return resultText.textContent();
+        }catch (TimeoutError e){
+            throw new RuntimeException("Locator not found");
+        }
+
+
     }
 
 

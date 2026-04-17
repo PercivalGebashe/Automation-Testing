@@ -7,7 +7,7 @@ public class BoundaryCasesData {
     @DataProvider(name = "boundaryCases")
     public Object[][] boundaryCases() {
         return new Object[][]{
-                {"171", "The factorial of 171 is: [\\d.]+(?:e[+\\-]?\\d+)?"},  // TC-05
+                {"171", "The factorial of 171 is: 1.2410180702176678e+309"},  // TC-05
                 {"992", "Input value is too large to process"}   // TC-06
         };
     }
