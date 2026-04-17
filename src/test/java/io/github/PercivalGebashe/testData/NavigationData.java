@@ -7,9 +7,9 @@ public class NavigationData {
     @DataProvider(name = "navigation")
     public Object[][] navigation() {
         return new Object[][]{
-                {"About", "about"},
-                {"Terms and Conditions", "terms",},
-                {"Privacy", "privacy"}
+                {"about", "/about"},
+                {"terms", "/terms",},
+                {"privacy", "/privacy"}
         };
     }
 }

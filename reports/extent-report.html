@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Automation Report</title>
+<title>Automation Reports</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
@@ -36,7 +36,7 @@
 <a href="#"><span class="badge badge-primary">Factorial Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 20, 2026 05:54:27 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 17, 2026 01:26:57 pm</span></a>
 </li>
 </ul>
 </div>
@@ -46,11 +46,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -81,25 +76,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
+            <p class="name">testPage</p>
             <p class="text-sm">
-              <span>17:54:50</span> / <span>00:00:00:355</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>13:27:24</span> / <span>00:00:00:731</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:54:50</span>
-<span class='badge badge-danger'>03.20.2026 17:54:50</span>
-<span class='badge badge-default'>00:00:00:355</span>
+<h5 class="test-status text-pass">testPage</h5>
+<span class='badge badge-success'>04.17.2026 13:27:24</span>
+<span class='badge badge-danger'>04.17.2026 13:27:25</span>
+<span class='badge badge-default'>00:00:00:731</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -111,54 +106,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:54:50</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>13:27:25</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Validation failed for input: -1 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at io.github.PercivalGebashe.tests.ValidationTests.testInvalidInputs(ValidationTests.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:54:50</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testInvalidInputs.png' src="test-output/screenshots/testInvalidInputs.png">
-    
-    </div></div>
+          Test Passed
         </td>
       </tr>
   </tbody>
@@ -166,25 +117,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
+            <p class="name">testPage</p>
             <p class="text-sm">
-              <span>17:54:54</span> / <span>00:00:00:145</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>13:27:30</span> / <span>00:00:10:589</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:54:54</span>
-<span class='badge badge-danger'>03.20.2026 17:54:54</span>
-<span class='badge badge-default'>00:00:00:145</span>
+<h5 class="test-status text-fail">testPage</h5>
+<span class='badge badge-success'>04.17.2026 13:27:30</span>
+<span class='badge badge-danger'>04.17.2026 13:27:41</span>
+<span class='badge badge-default'>00:00:10:589</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -196,10 +147,32 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:54:54</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>13:27:41</td>
         <td>
-          Test Passed
+          Terms not loaded expected [true] but found [false]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>13:27:41</td>
+        <td>
+          Screenshot
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,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2Nv+8h539MXO2EU63r31+PuHTr0CAKx0wfcAA39lK58y9Uf7YmfsIl3Q468AAP5CBDDwvspfJGrsbT38454atcQXO2MXqX3IfPOc+b2LePwVAMBfiEugAQAAiPD3CgAAAAIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIRmLq3gAADo5JREFUYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYAAAACIIYIAKAIAEAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAIAhgAAIAI/wMAAP//xtMgMwAAAAZJREFUAwDm8JJbT3xmvgAAAABJRU5ErkJggg==" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>13:27:41</td>
+        <td>
+          Screenshot
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\perci\OneDrive\Documents\personal_projects\interview-projects\AutomationTesting\test-output\screenshots\testPage_2026-04-17_13-27-41.png' src="C:\Users\perci\OneDrive\Documents\personal_projects\interview-projects\AutomationTesting\test-output\screenshots\testPage_2026-04-17_13-27-41.png">
+    
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -207,25 +180,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
+            <p class="name">testPage</p>
             <p class="text-sm">
-              <span>17:54:58</span> / <span>00:00:00:117</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>13:27:46</span> / <span>00:00:10:567</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:54:58</span>
-<span class='badge badge-danger'>03.20.2026 17:54:58</span>
-<span class='badge badge-default'>00:00:00:117</span>
+<h5 class="test-status text-fail">testPage</h5>
+<span class='badge badge-success'>04.17.2026 13:27:46</span>
+<span class='badge badge-danger'>04.17.2026 13:27:57</span>
+<span class='badge badge-default'>00:00:10:567</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -237,1462 +210,32 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:54:58</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
-            <p class="text-sm">
-              <span>17:55:02</span> / <span>00:00:00:135</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:55:02</span>
-<span class='badge badge-danger'>03.20.2026 17:55:02</span>
-<span class='badge badge-default'>00:00:00:135</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:02</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
-            <p class="text-sm">
-              <span>17:55:06</span> / <span>00:00:00:105</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:55:06</span>
-<span class='badge badge-danger'>03.20.2026 17:55:06</span>
-<span class='badge badge-default'>00:00:00:105</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:06</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testInvalidInputs</p>
-            <p class="text-sm">
-              <span>17:55:10</span> / <span>00:00:00:093</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testInvalidInputs</h5>
-<span class='badge badge-success'>03.20.2026 17:55:10</span>
-<span class='badge badge-danger'>03.20.2026 17:55:10</span>
-<span class='badge badge-default'>00:00:00:093</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:10</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testValidFactorials</p>
-            <p class="text-sm">
-              <span>17:55:14</span> / <span>00:00:00:985</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testValidFactorials</h5>
-<span class='badge badge-success'>03.20.2026 17:55:14</span>
-<span class='badge badge-danger'>03.20.2026 17:55:15</span>
-<span class='badge badge-default'>00:00:00:985</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:15</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testValidFactorials</p>
-            <p class="text-sm">
-              <span>17:55:19</span> / <span>00:00:00:939</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testValidFactorials</h5>
-<span class='badge badge-success'>03.20.2026 17:55:19</span>
-<span class='badge badge-danger'>03.20.2026 17:55:20</span>
-<span class='badge badge-default'>00:00:00:939</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:20</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testValidFactorials</p>
-            <p class="text-sm">
-              <span>17:55:24</span> / <span>00:00:00:515</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testValidFactorials</h5>
-<span class='badge badge-success'>03.20.2026 17:55:24</span>
-<span class='badge badge-danger'>03.20.2026 17:55:24</span>
-<span class='badge badge-default'>00:00:00:515</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:24</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testValidFactorials</p>
-            <p class="text-sm">
-              <span>17:55:28</span> / <span>00:00:00:466</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testValidFactorials</h5>
-<span class='badge badge-success'>03.20.2026 17:55:28</span>
-<span class='badge badge-danger'>03.20.2026 17:55:28</span>
-<span class='badge badge-default'>00:00:00:466</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:28</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testValidFactorials</p>
-            <p class="text-sm">
-              <span>17:55:32</span> / <span>00:00:00:434</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testValidFactorials</h5>
-<span class='badge badge-success'>03.20.2026 17:55:32</span>
-<span class='badge badge-danger'>03.20.2026 17:55:32</span>
-<span class='badge badge-default'>00:00:00:434</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:32</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="12"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testBoundaryBehaviour</p>
-            <p class="text-sm">
-              <span>17:55:36</span> / <span>00:00:00:220</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testBoundaryBehaviour</h5>
-<span class='badge badge-success'>03.20.2026 17:55:36</span>
-<span class='badge badge-danger'>03.20.2026 17:55:36</span>
-<span class='badge badge-default'>00:00:00:220</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:36</td>
+        <td>13:27:57</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Expected boundary behaviour not observed for input: 171 expected [The factorial of 171 is: [\d.]+(?:e[+\-]?\d+)?] but found [<!DOCTYPE html><html><head>
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F2PLZ6GCDD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F2PLZ6GCDD');
-    </script>
-    <title>Factoriall</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- QA interview stylesheet -->
-    <link href="/static/css/qa_interview_style.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container toppy">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1 class="margin-base-vertical text-center">The greatest factorial calculator!</h1>
-                <p class="input-group">
-                    <span class="input-group-addon">
-                        <span class="icon-arrow-right"></span>
-                    </span>
-                        <input type="text" id="number" class="form-control input-lg" name="number" placeholder="Enter an integer" style="border: 1px solid rgb(204, 204, 204);">
-                </p>
-                <p class="text-center top-space-40">
-                    <button type="submit" class="btn btn-success btn-lg" id="getFactorial">Calculate!</button>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <p class="text-center top-space-20" id="resultDiv">
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row-fluid">
-            <p class="margin-base-vertical text-center wor_copyright">
-                <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/terms">Privacy</a>
-            </p>
-            <!--Copyright-->
-            <p class="margin-base-vertical text-center wor_copyright">
-                © <a href="https://www.qxf2.com/?utm_source=qa-interview&amp;utm_medium=click&amp;utm_campaign=From%20QA%20Interview">Qxf2 Services</a> <script>document.write(new Date().getFullYear())</script>2026 -
-                <script>document.write(new Date().getFullYear())</script>2026
-            </p>
-        </div>
-        <!--Copyright-->
-    </div>
-    <script>
-        $("document").ready(function () {
-            $("#getFactorial").click(function () {
-                var number = $('#number').val();
-                console.log(number);
-                if (number != parseInt(number, 10)) {
-                    $("#number").css('border', 'solid 2px red');
-                    $("#resultDiv").text('Please enter an integer')
-                    $("#resultDiv").css('color', 'red');
-                } else {
-                    $("#number").css('border', 'solid 1px #ccc');
-                    var callDetails = {
-                        type: 'POST',
-                        url: '/factorial',
-                        data: {
-                            'number': number
-                        }
-                    };
-                    $.ajax(callDetails).done(function (factorial) {
-                        console.log('Hello! I am in the done part of the ajax call');
-                        console.log(factorial);
-                        $("#resultDiv").css('color', 'black');
-                        $("#resultDiv").text('The factorial of ' + number + ' is: ' + factorial.answer);
-                    });
-                }
-            });
-        });
-    </script>
-
-
-</body></html>]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at io.github.PercivalGebashe.tests.BoundaryTests.testBoundaryBehaviour(BoundaryTests.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
+          Privacy not loaded expected [true] but found [false]
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:36</td>
+        <td>13:27:57</td>
         <td>
-          
+          Screenshot
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testBoundaryBehaviour.png' src="test-output/screenshots/testBoundaryBehaviour.png">
-    
+        <a href="data:image/png;base64,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IIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABnrGKOQAADXNJREFUAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABAACIIIABCgAAEghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIghgAAAAIvw/AAAA//+xVVSyAAAABklEQVQDAJqHomqxszGGAAAAAElFTkSuQmCC" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
     </div></div>
         </td>
       </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testBoundaryBehaviour</p>
-            <p class="text-sm">
-              <span>17:55:40</span> / <span>00:00:00:153</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testBoundaryBehaviour</h5>
-<span class='badge badge-success'>03.20.2026 17:55:40</span>
-<span class='badge badge-danger'>03.20.2026 17:55:40</span>
-<span class='badge badge-default'>00:00:00:153</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:40</td>
+        <td>13:27:57</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: Expected boundary behaviour not observed for input: 992 expected [Input value is too large to process] but found [<!DOCTYPE html><html><head>
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F2PLZ6GCDD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F2PLZ6GCDD');
-    </script>
-    <title>Factoriall</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- QA interview stylesheet -->
-    <link href="/static/css/qa_interview_style.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container toppy">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1 class="margin-base-vertical text-center">The greatest factorial calculator!</h1>
-                <p class="input-group">
-                    <span class="input-group-addon">
-                        <span class="icon-arrow-right"></span>
-                    </span>
-                        <input type="text" id="number" class="form-control input-lg" name="number" placeholder="Enter an integer" style="border: 1px solid rgb(204, 204, 204);">
-                </p>
-                <p class="text-center top-space-40">
-                    <button type="submit" class="btn btn-success btn-lg" id="getFactorial">Calculate!</button>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <p class="text-center top-space-20" id="resultDiv">
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row-fluid">
-            <p class="margin-base-vertical text-center wor_copyright">
-                <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacy">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/terms">Privacy</a>
-            </p>
-            <!--Copyright-->
-            <p class="margin-base-vertical text-center wor_copyright">
-                © <a href="https://www.qxf2.com/?utm_source=qa-interview&amp;utm_medium=click&amp;utm_campaign=From%20QA%20Interview">Qxf2 Services</a> <script>document.write(new Date().getFullYear())</script>2026 -
-                <script>document.write(new Date().getFullYear())</script>2026
-            </p>
-        </div>
-        <!--Copyright-->
-    </div>
-    <script>
-        $("document").ready(function () {
-            $("#getFactorial").click(function () {
-                var number = $('#number').val();
-                console.log(number);
-                if (number != parseInt(number, 10)) {
-                    $("#number").css('border', 'solid 2px red');
-                    $("#resultDiv").text('Please enter an integer')
-                    $("#resultDiv").css('color', 'red');
-                } else {
-                    $("#number").css('border', 'solid 1px #ccc');
-                    var callDetails = {
-                        type: 'POST',
-                        url: '/factorial',
-                        data: {
-                            'number': number
-                        }
-                    };
-                    $.ajax(callDetails).done(function (factorial) {
-                        console.log('Hello! I am in the done part of the ajax call');
-                        console.log(factorial);
-                        $("#resultDiv").css('color', 'black');
-                        $("#resultDiv").text('The factorial of ' + number + ' is: ' + factorial.answer);
-                    });
-                }
-            });
-        });
-    </script>
-
-
-</body></html>]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at io.github.PercivalGebashe.tests.BoundaryTests.testBoundaryBehaviour(BoundaryTests.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:40</td>
-        <td>
-          
+          Screenshot
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testBoundaryBehaviour.png' src="test-output/screenshots/testBoundaryBehaviour.png">
+<img data-featherlight='C:\Users\perci\OneDrive\Documents\personal_projects\interview-projects\AutomationTesting\test-output\screenshots\testPage_2026-04-17_13-27-57.png' src="C:\Users\perci\OneDrive\Documents\personal_projects\interview-projects\AutomationTesting\test-output\screenshots\testPage_2026-04-17_13-27-57.png">
     
     </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testCorrectionFlow</p>
-            <p class="text-sm">
-              <span>17:55:44</span> / <span>00:00:00:548</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testCorrectionFlow</h5>
-<span class='badge badge-success'>03.20.2026 17:55:44</span>
-<span class='badge badge-danger'>03.20.2026 17:55:45</span>
-<span class='badge badge-default'>00:00:00:548</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:45</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="15"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testErrorMessageVisibility</p>
-            <p class="text-sm">
-              <span>17:55:48</span> / <span>00:00:00:127</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testErrorMessageVisibility</h5>
-<span class='badge badge-success'>03.20.2026 17:55:48</span>
-<span class='badge badge-danger'>03.20.2026 17:55:48</span>
-<span class='badge badge-default'>00:00:00:127</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:48</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="16"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testPage</p>
-            <p class="text-sm">
-              <span>17:55:52</span> / <span>00:00:00:419</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testPage</h5>
-<span class='badge badge-success'>03.20.2026 17:55:52</span>
-<span class='badge badge-danger'>03.20.2026 17:55:52</span>
-<span class='badge badge-default'>00:00:00:419</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:55:52</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="17"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testPage</p>
-            <p class="text-sm">
-              <span>17:55:56</span> / <span>00:00:00:080</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testPage</h5>
-<span class='badge badge-success'>03.20.2026 17:55:56</span>
-<span class='badge badge-danger'>03.20.2026 17:55:56</span>
-<span class='badge badge-default'>00:00:00:080</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:56</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at io.github.PercivalGebashe.tests.NavigationDataTests.testPage(NavigationDataTests.java:16)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:55:56</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testPage.png' src="test-output/screenshots/testPage.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="18"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testPage</p>
-            <p class="text-sm">
-              <span>17:55:59</span> / <span>00:00:00:106</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testPage</h5>
-<span class='badge badge-success'>03.20.2026 17:55:59</span>
-<span class='badge badge-danger'>03.20.2026 17:56:00</span>
-<span class='badge badge-default'>00:00:00:106</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:00</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at io.github.PercivalGebashe.tests.NavigationDataTests.testPage(NavigationDataTests.java:16)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:00</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testPage.png' src="test-output/screenshots/testPage.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="19"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:03</span> / <span>00:00:01:034</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:03</span>
-<span class='badge badge-danger'>03.20.2026 17:56:04</span>
-<span class='badge badge-default'>00:00:01:034</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:56:04</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="20"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:08</span> / <span>00:00:00:920</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:08</span>
-<span class='badge badge-danger'>03.20.2026 17:56:09</span>
-<span class='badge badge-default'>00:00:00:920</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:56:09</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="21"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:12</span> / <span>00:00:01:038</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:12</span>
-<span class='badge badge-danger'>03.20.2026 17:56:13</span>
-<span class='badge badge-default'>00:00:01:038</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:13</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [400] but found [500]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at io.github.PercivalGebashe.tests.ApiTests.testApiInputValidation(ApiTests.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:13</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testApiInputValidation.png' src="test-output/screenshots/testApiInputValidation.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="22"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:17</span> / <span>00:00:01:051</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:17</span>
-<span class='badge badge-danger'>03.20.2026 17:56:18</span>
-<span class='badge badge-default'>00:00:01:051</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:18</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [400] but found [500]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at io.github.PercivalGebashe.tests.ApiTests.testApiInputValidation(ApiTests.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:18</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testApiInputValidation.png' src="test-output/screenshots/testApiInputValidation.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="23"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:22</span> / <span>00:00:01:043</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:22</span>
-<span class='badge badge-danger'>03.20.2026 17:56:23</span>
-<span class='badge badge-default'>00:00:01:043</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:23</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [400] but found [500]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at io.github.PercivalGebashe.tests.ApiTests.testApiInputValidation(ApiTests.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:23</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testApiInputValidation.png' src="test-output/screenshots/testApiInputValidation.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="24"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiInputValidation</p>
-            <p class="text-sm">
-              <span>17:56:26</span> / <span>00:00:01:105</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">testApiInputValidation</h5>
-<span class='badge badge-success'>03.20.2026 17:56:26</span>
-<span class='badge badge-danger'>03.20.2026 17:56:27</span>
-<span class='badge badge-default'>00:00:01:105</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:27</td>
-        <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: expected [422] but found [500]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at io.github.PercivalGebashe.tests.ApiTests.testApiInputValidation(ApiTests.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>17:56:27</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='test-output/screenshots/testApiInputValidation.png' src="test-output/screenshots/testApiInputValidation.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="25"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">testApiRequestStructure</p>
-            <p class="text-sm">
-              <span>17:56:31</span> / <span>00:00:00:124</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">testApiRequestStructure</h5>
-<span class='badge badge-success'>03.20.2026 17:56:31</span>
-<span class='badge badge-danger'>03.20.2026 17:56:31</span>
-<span class='badge badge-default'>00:00:00:124</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>17:56:31</td>
-        <td>
-          Test Passed
         </td>
       </tr>
   </tbody>
@@ -1709,135 +252,30 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>9</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">9 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>9 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:54:50 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>testInvalidInputs</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:55:36 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>testBoundaryBehaviour</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:55:40 pm</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>testBoundaryBehaviour</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:55:56 pm</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>testPage</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:55:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>testPage</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:56:12 pm</td>
-<td>
-<a href="#" class="linked" test-id='21' id='21'>testApiInputValidation</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:56:17 pm</td>
-<td>
-<a href="#" class="linked" test-id='22' id='22'>testApiInputValidation</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:56:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='23' id='23'>testApiInputValidation</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:56:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='24' id='24'>testApiInputValidation</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 20, 2026 05:54:27 pm</h3>
+<h3>Apr 17, 2026 01:26:57 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 20, 2026 05:56:31 pm</h3>
+<h3>Apr 17, 2026 01:27:58 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>16</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>9</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -1853,12 +291,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='64%'>
-<b>16</b> tests passed
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='36%'><b>9</b> tests failed,
+<small data-tooltip='66%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1876,9 +314,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='47%'><b>16</b> events passed</small></div>
+<div><small data-tooltip='14%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='52%'><b>18</b> events failed,
+<small data-tooltip='85%'><b>6</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1895,7 +333,7 @@
 </div></div>
 <script>
 var timeline = {
-"testInvalidInputs":0.355,"testInvalidInputs":0.145,"testInvalidInputs":0.117,"testInvalidInputs":0.135,"testInvalidInputs":0.105,"testInvalidInputs":0.093,"testValidFactorials":0.985,"testValidFactorials":0.939,"testValidFactorials":0.515,"testValidFactorials":0.466,"testValidFactorials":0.434,"testBoundaryBehaviour":0.22,"testBoundaryBehaviour":0.153,"testCorrectionFlow":0.548,"testErrorMessageVisibility":0.127,"testPage":0.419,"testPage":0.08,"testPage":0.106,"testApiInputValidation":1.034,"testApiInputValidation":0.92,"testApiInputValidation":1.038,"testApiInputValidation":1.051,"testApiInputValidation":1.043,"testApiInputValidation":1.105,"testApiRequestStructure":0.124
+"testPage":0.731,"testPage":10.589,"testPage":10.567
 };
 </script>
 <div class="row">
@@ -1904,8 +342,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 16,
-failParent: 9,
+passParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1921,8 +359,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 16,
-failEvents: 18,
+passEvents: 1,
+failEvents: 6,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

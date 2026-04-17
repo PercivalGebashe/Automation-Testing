@@ -14,6 +14,13 @@ public class ExtentManager {
         if (extent == null) {
             extent = new ExtentReports();
 
+            ExtentSparkReporter spark = new ExtentSparkReporter("reports/extent-report.html");
+            try {
+                spark.loadXMLConfig("src/test/resources/extent-config.xml");
+            } catch (IOException e) {
+                throw new RuntimeException("HTML Config loading error: ", e);
+            }
+
             ExtentPDFReporter pdf = new ExtentPDFReporter("reports/extent-report.pdf");
             try {
                 pdf.loadJSONConfig(new File("src/test/resources/pdf-config.json"));
@@ -21,14 +28,7 @@ public class ExtentManager {
                 throw new RuntimeException("PDF Config loading error: ", e);
             }
 
-            ExtentSparkReporter spark = new ExtentSparkReporter("reports/extent-report.html");
-            try {
-                spark.loadXMLConfig("src/test/resources/extent-config.xml");
-            } catch (IOException e) {
-                throw new RuntimeException("HTML Config loading error: ", e);
-            }
             extent.attachReporter(spark, pdf);
-
         }
         return extent;
     }

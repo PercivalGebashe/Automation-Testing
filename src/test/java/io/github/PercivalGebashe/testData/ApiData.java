@@ -7,12 +7,12 @@ public class ApiData {
     @DataProvider(name = "apiData")
     public Object[][] apiData() {
         return new Object[][]{
-                {"5", "200", "\"answer\":120" },
-                {"171", "200", "\"answer\":1241018070"},
-                {"-1", "400", "\"error\": \"Invalid input: n must be a non-negative integer\""},
-                {"abc", "400", "\"error\": \"Invalid input: n must be an integer.\""},
-                {"", "400", "\"error\": \"Invalid input: n must be an integer.\""},
-                {"992", "422", "\"error\": \"Invalid input: n is too large to process\""}
+            {"/factorial", "number", "5",   "200", "\"answer\":120" },
+            {"/factorial", "number", "171", "200", "\"answer\":1241018070"},
+            {"/factorial", "number", "-1",  "400", "\"error\": \"Invalid input: n must be a non-negative integer\""},
+            {"/factorial", "number", "abc", "400", "\"error\": \"Invalid input: n must be an integer.\""},
+            {"/factorial", "number", "",    "400", "\"error\": \"Invalid input: n must be an integer.\""},
+            {"/factorial", "number", "992", "422", "\"error\": \"Invalid input: n is too large to process\""}
         };
     }
 

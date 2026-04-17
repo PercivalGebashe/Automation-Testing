@@ -3,7 +3,6 @@ package io.github.PercivalGebashe.utils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
 import io.github.PercivalGebashe.base.BaseTest;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -28,19 +27,18 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         Object currentClass = result.getInstance();
-
         BaseTest baseTest = (BaseTest) currentClass;
 
-        String screenshot = baseTest.takeScreenshot(result.getName());
-        test.fail(result.getThrowable()).log(
-                Status.FAIL,
-                MediaEntityBuilder.createScreenCaptureFromPath("test-output/screenshots/" + result.getName() +  ".png").build());
+        String screenshotPath= baseTest.takeScreenshotToFile(result.getName());
+        String base64String = baseTest.takeScreenshotBase64(screenshotPath);
+
+        test.fail(result.getThrowable().getMessage());
+        test.fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromBase64String(base64String).build());
+        test.fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        String projectDir = System.getProperty("user.dir");
-        System.out.println("project dir:" + projectDir);
         extent.flush();
     }
 }

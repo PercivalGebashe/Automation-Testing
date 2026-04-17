@@ -3,7 +3,7 @@ package io.github.PercivalGebashe.pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
-public class FactorialPage {
+public class BasePage {
 
     private final Page page;
 
@@ -15,19 +15,15 @@ public class FactorialPage {
     private final Locator termsLink;
     private final Locator privacyLink;
 
-    public FactorialPage(Page page) {
+    public BasePage(Page page) {
         this.page = page;
 
         this.inputField = page.locator("input[type='text']");
         this.submitButton = page.locator("button[type='submit']");
         this.resultText = page.locator("#resultDiv");
-        this.aboutLink = page.locator("text=About");
-        this.termsLink = page.locator("text=Terms");
-        this.privacyLink = page.locator("text=Privacy");
-    }
-
-    public void navigate() {
-        page.navigate("https://qainterview.pythonanywhere.com/");
+        this.aboutLink = page.locator("a[href='/about']");
+        this.termsLink = page.locator("a[href='/terms']");
+        this.privacyLink = page.locator("a[href='/privacy']");
     }
 
     private void enterNumber(String number) {
@@ -45,7 +41,7 @@ public class FactorialPage {
     }
 
     public String getResultText() {
-        waitForResult();
+        resultText.waitFor();
         return resultText.textContent();
     }
 
@@ -63,16 +59,19 @@ public class FactorialPage {
         aboutLink.click();
     }
 
-    public void navigateTo(String page){
-        switch (page.toLowerCase()){
+    public void navigateTo(String link){
+        switch (link.toLowerCase()){
             case "about":
                 clickAbout();
                 break;
-            case "Terms and Conditions":
+            case "terms":
                 clickTerms();
                 break;
-            case "Privacy":
+            case "privacy":
                 clickPrivacy();
+                break;
+            default:
+                throw new RuntimeException(String.format("Page: %s does not exist", link));
         }
     }
 
@@ -90,14 +89,6 @@ public class FactorialPage {
 
     public String getPageContent() {
         return page.content();
-    }
-
-    private void waitForResult() {
-        try {
-            resultText.waitFor();
-        } catch (Exception e) {
-            // fallback for error or server crash cases
-        }
     }
 
     public void listenForFactorialRequest() {

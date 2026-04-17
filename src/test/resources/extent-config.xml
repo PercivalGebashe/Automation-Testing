@@ -17,8 +17,8 @@
 
         <protocol>http</protocol>
         <!-- title of the document -->
-        <documentTitle>Automation Report</documentTitle>
-        <!-- report name - displayed at top-nav -->
+        <documentTitle>Automation Reports</documentTitle>
+        <!-- report name - displayed on browser title -->
 
         <reportName>Factorial Test Results</reportName>
         <!-- location of charts in the test view -->
